@@ -103,7 +103,10 @@ def main():
         InvalidPortRangeError: If the entered port range is invalid.
     """
     title = pyfiglet.figlet_format("PORT SCANNER")
+        title2 = pyfiglet.figlet_format("By :- N.B.")
+
     print(title)
+    print(title2)
     
     while True:
         try:

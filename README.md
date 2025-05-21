@@ -1,38 +1,80 @@
-Network Scanner
-Table of Contents
-Description
-Installation
-Usage
-Output
-Dependencies
-Contributing
-Description
-A simple Python-based port scanner that allows you to scan open ports on a specified IPv4 address within a given port range. The scanner validates IP addresses, scans the specified ports, and displays open ports along with their associated protocols.
+🔍 Network Scanner Tool
+A simple and effective Python-based Network Scanner designed to identify live hosts, open ports, and basic service information on a local or remote network. Ideal for cybersecurity enthusiasts, ethical hackers, and network administrators to perform quick reconnaissance during security assessments or troubleshooting.
 
-Installation
-Clone this repository:
-git clone https://github.com/Kairos-T/Network-Scanner/tree/main
-cd Network-Scanner
-Install the dependencies:
-pip install -r requirements.txt
-Usage
-Run the script with the following command:
-python networkscanner.py
-Follow the prompts to enter the IPv4 address and port range you want to scan.
+⚙️ Features
+🌐 Scan Local or Remote Networks
 
-The script will display a list of open ports along with their associated protocols.
+⚡ Ping Sweep to detect active devices
 
-To exit the program, enter 'exit' when prompted for the IP address.
+🔓 Port Scanning on custom or default ports
 
-Output
-The script outputs a list of open ports on the specified IP address along with their associated protocols.
+🛡️ Banner Grabbing for basic service identification
 
-Sample Output:
+📄 Export scan results (optional feature)
 
-image
-
-Dependencies
+🚀 Getting Started
+Prerequisites
 Python 3.x
-Python pyfiglet library
-Contributing
-Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or create a pull request.
+
+Required libraries:
+
+scapy
+
+socket
+
+argparse (usually built-in)
+
+ipaddress
+
+Install dependencies:
+
+bash
+Copy
+Edit
+pip install scapy
+🔧 Usage
+bash
+Copy
+Edit
+python network_scanner.py -t 192.168.1.0/24
+Options:
+
+-t or --target: Network range or single IP to scan
+
+-p or --ports: Comma-separated ports (optional)
+
+Example:
+
+bash
+Copy
+Edit
+python network_scanner.py -t 192.168.0.0/24 -p 22,80,443
+📌 Why Use This Tool?
+Whether you're conducting penetration testing, performing network inventory, or just learning about network protocols, this tool gives you hands-on experience with foundational techniques like:
+
+Subnet scanning
+
+ICMP echo requests
+
+TCP SYN port checks
+
+Basic fingerprinting
+
+🧠 Educational Use Only
+This tool is intended strictly for educational and authorized use. Do not scan networks you do not own or have permission to audit.
+
+🛠️ To-Do / Upcoming Features
+Threading for faster scans
+
+OS detection
+
+GUI version
+
+Export results to CSV/JSON
+
+🤝 Contributing
+Pull requests and feedback are welcome! Let’s grow this into a more powerful reconnaissance toolkit together.
+
+📜 License
+MIT License — free to use, modify, and share under proper attribution.
+

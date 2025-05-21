@@ -46,7 +46,7 @@ The script outputs a list of open ports on the specified IP address along with t
 
 Sample Output:
 
-![image](https://github.com/Kairos-T/Network-Scanner/assets/80029462/1c0038ee-4bfc-4042-b97f-f465af748339)
+![image](https://github.com/NonitBajaj/Network_Scanner/blob/main/Screenshot%202025-05-21%20165604.png)
 
 
 ## Dependencies
